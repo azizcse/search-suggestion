@@ -6,6 +6,12 @@
     android:layout_marginTop="20dp"
     android:layout_height="match_parent">
 
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/flow_layout"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"/>
+
     <SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
@@ -13,7 +19,7 @@
         android:queryHint="Search"
         android:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow_layout"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
